@@ -46,8 +46,11 @@ class Chatbox {
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
 
+<<<<<<< HEAD
         
         // fetch($SCRIPT_ROOT + '/predict', {
+=======
+>>>>>>> 32c43d1faf1c54d861de2ae8150b0ef63237436b
         fetch('http://127.0.0.1:5000/predict', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
