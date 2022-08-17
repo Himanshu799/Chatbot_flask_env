@@ -1,7 +1,8 @@
 from flask import Flask, render_template, url_for, request, redirect, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-
+import requests
+import configparser
 
 # source xicor_env/bin/activate  
 
@@ -35,5 +36,5 @@ def predict():
     return jsonify(message)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0" ,port=5000)
     
