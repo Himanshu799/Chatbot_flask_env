@@ -21,7 +21,7 @@ CORS(app)
 
 # @app.get("/")
 def index_get():
-    return render_template("web_main_2_javas.html")
+    return render_template("index.html")
 
 @app.post("/predict")
 def predict():
